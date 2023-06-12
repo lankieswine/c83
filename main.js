@@ -11,7 +11,7 @@ Escribe: "age.sort()"
 
 */
 
-age.sort(72, 48, 46, 12, 9);
+age.sort();
 
 /*
 
@@ -21,7 +21,7 @@ Después de ordenar el array "age", todos los elementos se organizarán en orden
 Escribe: "age.reverse()"
 
 */
-age.reverse(72, 48, 46, 12, 9);
+age.reverse();
 
 var i = 0;
 
@@ -35,11 +35,11 @@ function update()
         i = 0;
     }
     
-    var updatedImage = images[i++];
+    var updatedImage = images[i];
 
-    var updatedName  = names[i++];
+    var updatedName  = names[i];
     
-    var updatedAge = age[i++];
+    var updatedAge = age[i];
 
     document.getElementById("family_member_image").src = updatedImage;
     
@@ -56,7 +56,7 @@ function update()
 
     */
 
-    var max_number = Math.max.apply(Math,72 );
+    var max_number = Math.max.apply(Math,age );
     console.log("La edad más alta es: 72",  );
 
     /*
@@ -68,7 +68,7 @@ function update()
 
     */
 
-    var min_number = Math.max.apply(Math,9  );
+    var min_number = Math.max.apply(Math,age  );
     console.log("La edad más baja es: 9 ",  );
 }
 
